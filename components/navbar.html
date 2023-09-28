@@ -112,31 +112,33 @@
             </div>
           </div>
         </div>
-        <div class="navbar-menu-code">
-          <script>
-            /*
-            Mobile menu - Code Embed
-            */
+        <div>
+          <div class="navbar-container4">
+            <script>
+              /*
+              Mobile menu - Code Embed
+              */
 
-            // Mobile menu
-            const mobileMenu = document.querySelector('#mobile-menu');
+              // Mobile menu
+              const mobileMenu = document.querySelector('#mobile-menu');
 
-            // Buttons
-            const closeButton = document.querySelector('#close-mobile-menu');
-            const openButton = document.querySelector('#open-mobile-menu');
+              // Buttons
+              const closeButton = document.querySelector('#close-mobile-menu');
+              const openButton = document.querySelector('#open-mobile-menu');
 
-            if (mobileMenu && closeButton && openButton) {
-              // On openButton click, set the mobileMenu position left to -100vw
-              openButton.addEventListener('click', function () {
-                mobileMenu.style.transform = 'translateX(0%)';
-              });
+              if (mobileMenu && closeButton && openButton) {
+                // On openButton click, set the mobileMenu position left to -100vw
+                openButton.addEventListener('click', function () {
+                  mobileMenu.style.transform = 'translateX(0%)';
+                });
 
-              // On closeButton click, set the mobileMenu position to 0vw
-              closeButton.addEventListener('click', function () {
-                mobileMenu.style.transform = 'translateX(100%)';
-              });
-            }
-          </script>
+                // On closeButton click, set the mobileMenu position to 0vw
+                closeButton.addEventListener('click', function () {
+                  mobileMenu.style.transform = 'translateX(100%)';
+                });
+              }
+            </script>
+          </div>
         </div>
       </nav>
     </div>

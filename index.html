@@ -55,7 +55,7 @@
       <link href="./index.css" rel="stylesheet" />
 
       <div class="home-container">
-        <div class="home-heading">
+        <div class="home-head">
           <nav class="navbar-navbar">
             <div class="navbar-desktop">
               <div class="navbar-main">
@@ -116,33 +116,65 @@
                 </div>
               </div>
             </div>
-            <div class="navbar-menu-code">
-              <script>
-                /*
-                Mobile menu - Code Embed
-                */
+            <div>
+              <div class="navbar-container4">
+                <script>
+                  /*
+                  Mobile menu - Code Embed
+                  */
 
-                // Mobile menu
-                const mobileMenu = document.querySelector('#mobile-menu');
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu');
 
-                // Buttons
-                const closeButton = document.querySelector('#close-mobile-menu');
-                const openButton = document.querySelector('#open-mobile-menu');
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu');
+                  const openButton = document.querySelector('#open-mobile-menu');
 
-                if (mobileMenu && closeButton && openButton) {
-                  // On openButton click, set the mobileMenu position left to -100vw
-                  openButton.addEventListener('click', function () {
-                    mobileMenu.style.transform = 'translateX(0%)';
-                  });
+                  if (mobileMenu && closeButton && openButton) {
+                    // On openButton click, set the mobileMenu position left to -100vw
+                    openButton.addEventListener('click', function () {
+                      mobileMenu.style.transform = 'translateX(0%)';
+                    });
 
-                  // On closeButton click, set the mobileMenu position to 0vw
-                  closeButton.addEventListener('click', function () {
-                    mobileMenu.style.transform = 'translateX(100%)';
-                  });
-                }
-              </script>
+                    // On closeButton click, set the mobileMenu position to 0vw
+                    closeButton.addEventListener('click', function () {
+                      mobileMenu.style.transform = 'translateX(100%)';
+                    });
+                  }
+                </script>
+              </div>
             </div>
           </nav>
+        </div>
+        <div class="home-body">
+          <div class="home-container1">
+            <div class="home-container2">
+              <div class="home-container3">
+                <div class="home-container4">
+                  <h1 class="home-text">
+                    Welcome to Fosaconnect - Your Job Search Community
+                  </h1>
+                </div>
+                <div class="home-container5">
+                  <span class="home-text1">
+                    Fosaconnect is the ultimate platform to connect with
+                    fellow&nbsp;alumni and post job opportunities for current
+                    students to apply to. Our&nbsp;career community is designed
+                    to help you find the perfect fit with ease.
+                  </span>
+                </div>
+              </div>
+              <div class="home-container6">
+                <div class="home-container7">
+                  <img
+                    alt="image"
+                    src="public/georgie-cobbs-bkjhgo_lbpo-unsplash_sbnjlfcz-1200w.webp"
+                    class="home-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
