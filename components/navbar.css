@@ -27,13 +27,13 @@
   flex-direction: row;
   justify-content: center;
 }
-.navbar-container {
+.navbar-brand {
   display: flex;
   align-self: center;
   align-items: flex-start;
   flex-direction: row;
 }
-.navbar-container1 {
+.navbar-brand1 {
   width: 100%;
   display: flex;
   align-self: center;
@@ -53,7 +53,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.navbar-container2 {
+.navbar-content {
   flex: 1;
   display: flex;
   align-items: flex-start;
@@ -72,6 +72,12 @@
   flex-direction: row;
   padding-bottom: 12px;
   justify-content: flex-end;
+}
+.navbar-link1 {
+  text-decoration: none;
+}
+.navbar-link2 {
+  text-decoration: none;
 }
 .navbar-quick-actions {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -145,44 +151,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.navbar-text1 {
+.navbar-link5 {
   text-decoration: none;
 }
-.navbar-text2 {
+.navbar-link6 {
   text-decoration: none;
 }
-.navbar-text3 {
-  text-decoration: none;
-}
-.navbar-text4 {
-  text-decoration: none;
-}
-.navbar-buttons {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-}
-.navbar-btn {
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  align-items: center;
-  border-radius: var(--dl-radius-radius-radius8);
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  background-color: #ADE2DF;
-}
-.navbar-text5 {
-  font-style: normal;
-  font-weight: 500;
-}
-.navbar-container4 {
+.navbar-container1 {
   display: contents;
 }
 @media(max-width: 1600px) {
@@ -201,11 +176,17 @@
     padding-left: var(--dl-space-space-halfunit);
     padding-right: var(--dl-space-space-halfunit);
   }
+  .navbar-main {
+    gap: initial;
+  }
   .navbar-links {
     display: none;
   }
+  .navbar-quick-actions {
+    margin-right: var(--dl-space-space-unit);
+  }
   .navbar-sign-up-btn {
-    display: none;
+    margin-right: var(--dl-space-space-halfunit);
   }
   .navbar-hamburger-menu {
     display: flex;
@@ -220,5 +201,10 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .navbar-sign-up-btn {
+    margin-right: initial;
   }
 }
