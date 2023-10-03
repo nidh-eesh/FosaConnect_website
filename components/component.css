@@ -1,0 +1,37 @@
+.component-container {
+  gap: 10px;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1140px;
+  align-self: auto;
+  flex-basis: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.component-container1 {
+  gap: 20px;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  max-width: 100%;
+  align-items: flex-start;
+}
+.component-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: inline-block;
+  align-items: flex-start;
+  word-spacing: 5px;
+}

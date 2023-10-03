@@ -70,7 +70,19 @@
   list-style-position: outside;
 }
 .list-item {
-  display: list-item;
+  color: #4D4D4D;
+  display: flex;
+  font-size: 18px;
+  list-style: disc;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: color 0.3s;
+  align-items: center;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.6em;
+  padding-bottom: var(--dl-space-space-unit);
+  list-style-type: none;
+  list-style-position: outside;
 }
 .teleport-show {
   display: flex !important;
@@ -102,5 +114,10 @@
   text-decoration: none;
 }
 
-
+@media(max-width: 767px) {
+  .list-item {
+    font-size: 15px;
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+}
 
